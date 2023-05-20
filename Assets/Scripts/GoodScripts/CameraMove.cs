@@ -10,7 +10,7 @@ public class CameraMove : MonoBehaviour
     private float yRotation;
     void Start()
     {
-        player_coordinates = GameObject.Find("Player").transform;
+        player_coordinates = GameObject.FindGameObjectWithTag("Player").transform;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
